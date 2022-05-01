@@ -21,8 +21,8 @@ function PortfolioDrawer() {
       </Drawer>
 
       <Group position="center">
-        <ActionIcon>
-            <Briefcase onClick={() => setOpened(true)} />
+        <ActionIcon size={40}>
+            <Briefcase onClick={() => setOpened(true)} size={40}/>
         </ActionIcon>
       </Group>
     </>
