@@ -1,0 +1,32 @@
+import { useState } from 'react';
+import { Drawer,Group, ActionIcon } from '@mantine/core';
+import { Briefcase } from 'tabler-icons-react';
+// components
+import ProjectList from './ProjectList';
+
+function PortfolioDrawer() {
+  const [opened, setOpened] = useState(false);
+
+  return (
+    <>
+      <Drawer
+        opened={opened}
+        onClose={() => setOpened(false)}
+        title="Projects"
+        padding="xl"
+        size="xl"
+      >
+        {/* Drawer content */}
+        <ProjectList />
+      </Drawer>
+
+      <Group position="center">
+        <ActionIcon>
+            <Briefcase onClick={() => setOpened(true)} />
+        </ActionIcon>
+      </Group>
+    </>
+  );
+}
+
+export default PortfolioDrawer;
