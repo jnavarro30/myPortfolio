@@ -12,7 +12,7 @@ function PortfolioDrawer() {
       <Drawer
         opened={opened}
         onClose={() => setOpened(false)}
-        title="Projects"
+        title="PROJECTS"
         padding="xl"
         size="xl"
       >

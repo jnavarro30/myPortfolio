@@ -1,18 +1,24 @@
 import React from 'react';
 import './App.css';
-import { Container } from '@mantine/core';
+import { Container, AspectRatio, Image } from '@mantine/core';
+import myPic from "./images/Jesse_Navarro.jpg";
 // components
 import Navbar from './components/Navbar';
 function App() {
   return (
     <>
       <Navbar />
-      <Container>
-        <h1 className="text-3xl font-bold underline">
-          Hello world! 
-        </h1>
-  
-      </Container>
+        <Container>
+          <AspectRatio ratio={720 / 1080} sx={{ maxWidth: 300 }} mx="auto">
+            <Image
+              src={myPic}
+              alt="picture of myself"
+              radius="md"
+              width={250}
+              height={250}
+            />
+          </AspectRatio>
+        </Container>
     </> 
   );
 }
