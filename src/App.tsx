@@ -4,6 +4,8 @@ import { Container, AspectRatio, Image } from '@mantine/core';
 import myPic from "./images/Jesse_Navarro.jpg";
 // components
 import Navbar from './components/Navbar';
+import HomeCollapse from './components/home/Collapse';
+
 function App() {
   return (
     <>
@@ -18,6 +20,7 @@ function App() {
               height={250}
             />
           </AspectRatio>
+          <HomeCollapse />
         </Container>
     </> 
   );
