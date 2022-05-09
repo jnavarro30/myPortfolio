@@ -3,8 +3,8 @@ import './App.css';
 import { Container, AspectRatio, Image } from '@mantine/core';
 import myPic from "./images/Jesse_Navarro.jpg";
 // components
-import Navbar from './components/Navbar';
-import HomeCollapse from './components/home/Collapse';
+import Navbar from './components/navbar';
+import HomeCollapse from './components/home/home-collapse';
 
 function App() {
   return (

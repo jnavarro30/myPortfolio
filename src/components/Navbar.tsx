@@ -1,8 +1,8 @@
 import { ActionIcon } from "@mantine/core";
 import { Home } from "tabler-icons-react";
 // components
-import PortfolioDrawer from "./portfolio/Drawer";
-import ContactDrawer from "./contact/Drawer";
+import PortfolioDrawer from "./portfolio/portfolio-drawer";
+import ContactDrawer from "./contact/contact-drawer";
 
 function Navbar() {
   return (

@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Drawer, Group, ActionIcon } from "@mantine/core";
-import { At } from "tabler-icons-react";
+import { Briefcase } from "tabler-icons-react";
 // components
+import ProjectList from "./project-list";
 
-function PortfolioModal() {
+function PortfolioDrawer() {
   const [opened, setOpened] = useState(false);
 
   return (
@@ -11,21 +12,21 @@ function PortfolioModal() {
       <Drawer
         opened={opened}
         onClose={() => setOpened(false)}
-        title="Contact"
+        title="PROJECTS"
         padding="xl"
-        size="xs"
-        position="top"
+        size="xl"
       >
         {/* Drawer content */}
+        <ProjectList />
       </Drawer>
 
       <Group position="center">
         <ActionIcon size={40}>
-          <At onClick={() => setOpened(true)} size={40} />
+          <Briefcase onClick={() => setOpened(true)} size={40} />
         </ActionIcon>
       </Group>
     </>
   );
 }
 
-export default PortfolioModal;
+export default PortfolioDrawer;
