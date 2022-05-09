@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { Drawer,Group, ActionIcon } from '@mantine/core';
-import { At } from 'tabler-icons-react';
-// components 
+import { useState } from "react";
+import { Drawer, Group, ActionIcon } from "@mantine/core";
+import { At } from "tabler-icons-react";
+// components
 
 function PortfolioModal() {
   const [opened, setOpened] = useState(false);
@@ -17,12 +17,11 @@ function PortfolioModal() {
         position="top"
       >
         {/* Drawer content */}
-
       </Drawer>
 
       <Group position="center">
         <ActionIcon size={40}>
-            <At onClick={() => setOpened(true)} size={40}/>
+          <At onClick={() => setOpened(true)} size={40} />
         </ActionIcon>
       </Group>
     </>
