@@ -45,7 +45,7 @@ function ContactForm() {
       />
       <Textarea placeholder="comments" label="your comments" name="comments" />
       <button
-        className="border-4 rounded w-1/2 p-2 justify-self-center hover:cursor-pointer"
+        className="border-4 rounded w-1/2 p-2 justify-self-center hover:cursor-pointer hover:bg-slate-200"
         type="submit"
       >
         Submit
