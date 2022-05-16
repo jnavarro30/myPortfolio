@@ -1,13 +1,23 @@
-import { SimpleGrid } from '@mantine/core';
+import { SimpleGrid } from "@mantine/core";
+import KoD from "../../images/kingdom_of_dwarves.png";
+// components
+import ProjectCard from "./project-card";
 
 function ProjectsPage() {
+  const images = [KoD];
   return (
-    <SimpleGrid className="border-2">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
+    <SimpleGrid
+      className="border-2"
+      spacing="lg"
+      breakpoints={[
+        { maxWidth: "md", cols: 2, spacing: "sm" },
+        { maxWidth: "xs", cols: 1, spacing: "sm" },
+      ]}
+    >
+      <ProjectCard projectImage={KoD} />
+      <ProjectCard projectImage={KoD} />
+      <ProjectCard projectImage={KoD} />
+      <ProjectCard projectImage={KoD} />
     </SimpleGrid>
   );
 }
