@@ -4,6 +4,7 @@ import myPic from "./images/profile-pic.png";
 // components
 import Navbar from "./components/nav-bar";
 import HomeCollapse from "./components/home/home-collapse";
+import ProjectsPage from "./components/portfolio/projects-page";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           />
         </AspectRatio>
         <HomeCollapse />
+        <ProjectsPage />
       </Container>
     </>
   );
