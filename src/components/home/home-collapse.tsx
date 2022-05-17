@@ -12,8 +12,7 @@ function HomeCollapse() {
         {opened ? <ChevronUp size={40} /> : <ChevronDown size={40} />}
       </ActionIcon>
 
-      <Collapse in={opened}>
-        {/* content... */}
+      <Collapse className="mb-2" in={opened}>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa commodi,
         sequi id tenetur debitis ab perferendis laudantium repellendus non
         quisquam accusamus impedit tempore necessitatibus quos doloremque atque?
