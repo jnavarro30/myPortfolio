@@ -5,11 +5,8 @@ import myPic from "./images/profile-pic.png";
 import Navbar from "./components/nav-bar";
 import HomeCollapse from "./components/home/home-collapse";
 import ProjectsPage from "./components/portfolio/projects-page";
-import useScrollPosition from "./utils/custom-hooks";
 
 function App() {
-  const scrollPosition = useScrollPosition();
-  console.log(scrollPosition);
   return (
     <>
       <Navbar />
