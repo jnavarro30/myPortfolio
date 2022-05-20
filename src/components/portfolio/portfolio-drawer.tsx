@@ -11,7 +11,7 @@ function PortfolioDrawer() {
 
   const handleOnClose = () => {
     setOpened(false);
-    setTimeout(() => window.scrollTo(0, scrollPosition), 20);
+    setTimeout(() => window.scrollTo(0, scrollPosition), 21);
   };
 
   return (
