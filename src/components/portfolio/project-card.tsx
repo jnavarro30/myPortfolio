@@ -13,6 +13,7 @@ interface ProjectProps {
   projectDescription: string;
   projectTechnologies: string[];
   projectImage: string;
+  projectId: string;
 }
 
 function ProjectCard({
@@ -20,6 +21,7 @@ function ProjectCard({
   projectDescription,
   projectTechnologies,
   projectImage,
+  projectId
 }: ProjectProps) {
   const theme = useMantineTheme();
 
@@ -29,7 +31,7 @@ function ProjectCard({
   const colors = ["violet", "indigo", "", "cyan"];
 
   return (
-    <div className="w-5/6 m-auto">
+    <div id={projectId}className="w-5/6 m-auto">
       <Card shadow="sm" p="lg">
         <Card.Section>
           <Image

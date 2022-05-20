@@ -52,6 +52,7 @@ function ProjectsPage() {
           projectDescription={project.description}
           projectTechnologies={project.technologies}
           projectImage={project.image}
+          projectId={`${index}`}
         />
       ))}
     </SimpleGrid>
