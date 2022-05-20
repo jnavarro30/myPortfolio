@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div className="nav_bar border-2 flex justify-evenly py-4 sticky top-0 z-10 bg-white">
       <PortfolioDrawer />
-      <ActionIcon size={40}>
+      <ActionIcon size={40} onClick={() => window.scrollTo(0, 0)}>
         <Home size={40} />
       </ActionIcon>
       <ContactDrawer />
