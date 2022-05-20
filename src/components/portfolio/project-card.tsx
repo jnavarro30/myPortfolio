@@ -3,7 +3,6 @@ import {
   Image,
   Text,
   Badge,
-  Button,
   Group,
   useMantineTheme,
 } from "@mantine/core";
@@ -14,6 +13,7 @@ interface ProjectProps {
   projectTechnologies: string[];
   projectImage: string;
   projectId: string;
+  projectLink: string;
 }
 
 function ProjectCard({
@@ -21,7 +21,8 @@ function ProjectCard({
   projectDescription,
   projectTechnologies,
   projectImage,
-  projectId
+  projectId,
+  projectLink,
 }: ProjectProps) {
   const theme = useMantineTheme();
 
@@ -31,8 +32,8 @@ function ProjectCard({
   const colors = ["violet", "indigo", "", "cyan"];
 
   return (
-    <div id={projectId}className="w-5/6 m-auto">
-      <Card shadow="sm" p="lg">
+    <div id={projectId} className="w-5/6 m-auto">
+      <Card shadow="sm" p="lg" component="a" href={projectLink} target="_blank">
         <Card.Section>
           <Image
             className="mt-2"
@@ -57,15 +58,6 @@ function ProjectCard({
         <Text size="sm" style={{ color: secondaryColor, lineHeight: 1.5 }}>
           {projectDescription}
         </Text>
-
-        <Button
-          variant="light"
-          color="blue"
-          fullWidth
-          style={{ marginTop: 14 }}
-        >
-          Demo
-        </Button>
       </Card>
     </div>
   );
