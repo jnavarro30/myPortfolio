@@ -32,7 +32,7 @@ function ProjectCard({
   const colors = ["violet", "indigo", "", "cyan"];
 
   return (
-    <div id={projectId} className="w-5/6 m-auto">
+    <div id={projectId} className="w-5/6 m-auto hover:shadow-2xl">
       <Card shadow="sm" p="lg" component="a" href={projectLink} target="_blank">
         <Card.Section>
           <Image
