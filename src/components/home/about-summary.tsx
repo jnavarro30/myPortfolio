@@ -6,12 +6,11 @@ function AboutSummary() {
       <Title order={1}>About Me</Title>
       <Paper className="m-10" p="md">
         <Text>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
-          nobis reprehenderit, voluptas alias atque ut ab ad totam quo natus,
-          quia soluta minima ipsam aliquid delectus! Iusto explicabo reiciendis
-          assumenda odio obcaecati non quae molestias atque. Expedita dicta
-          minus autem nisi, nihil aspernatur, corrupti molestias obcaecati
-          laudantium unde sit esse?
+          Hello, I'm Jesse. I have been a dental technician for the past decade
+          and currently I digitally design orthadontics remotely. I began coding
+          in late 2018 focusing on the fundamentals of Javascript. In 2021 I
+          graduated from the Thinkful full-stack boot-camp which covered industry
+          standards, and conventions. I am ready to apply my new skills.
         </Text>
       </Paper>
     </div>
