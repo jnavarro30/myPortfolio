@@ -30,7 +30,8 @@ function PortfolioDrawer() {
 
       <Group position="center">
         <ActionIcon size={40}>
-          <Briefcase style={{color: "#8b4513"}} onClick={() => setOpened(true)} size={40} />
+          <Briefcase
+           onClick={() => setOpened(true)} size={40} />
         </ActionIcon>
       </Group>
     </>

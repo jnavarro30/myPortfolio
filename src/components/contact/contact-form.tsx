@@ -1,7 +1,11 @@
-import { TextInput, Textarea } from "@mantine/core";
+import { useState } from "react";
+import { TextInput, Textarea, ActionIcon } from "@mantine/core";
+import { Send, Check } from "tabler-icons-react";
 import emailjs from "emailjs-com";
 
 function ContactForm() {
+  const [icon, setIcon] = useState(true);
+
   const sendEmail = (e: any) => {
     e.preventDefault();
 
@@ -21,6 +25,10 @@ function ContactForm() {
         }
       );
     e.target.reset();
+    setIcon(false);
+    setTimeout(() => {
+      setIcon(true);
+    }, 2000);
   };
 
   return (
@@ -44,12 +52,16 @@ function ContactForm() {
         required
       />
       <Textarea placeholder="comments" label="your comments" name="comments" />
-      <button
-        className="border-4 rounded w-1/2 p-2 justify-self-center hover:cursor-pointer hover:bg-slate-200"
+      <ActionIcon
+        className="border-4 rounded w-1/2 p-2 justify-self-center hover:cursor-pointer hover:bg-white"
         type="submit"
       >
-        Submit
-      </button>
+        {icon ? (
+          <Send size={35} />
+        ) : (
+          <Check style={{ color: "green" }} size={35} />
+        )}
+      </ActionIcon>
     </form>
   );
 }
