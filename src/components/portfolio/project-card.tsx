@@ -55,7 +55,7 @@ function ProjectCard({
           ))}
         </Group>
 
-        <Text size="sm" style={{ color: secondaryColor, lineHeight: 1.5 }}>
+        <Text className="p-1 m-1" size="sm" style={{ color: secondaryColor, lineHeight: 1.5 }}>
           {projectDescription}
         </Text>
       </Card>

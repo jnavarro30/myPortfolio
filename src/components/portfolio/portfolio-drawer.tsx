@@ -21,7 +21,7 @@ function PortfolioDrawer() {
         onClose={handleOnClose}
         title="PROJECTS"
         padding="xl"
-        size="xl"
+        size="lg"
         lockScroll={false}
       >
         <ProjectList />
