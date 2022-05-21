@@ -47,7 +47,9 @@ function ProjectCard({
           position="apart"
           style={{ marginBottom: 5, marginTop: theme.spacing.sm }}
         >
-          <Text weight={500}>{projectTitle}</Text>
+          <Text className="font-montserrat" weight={500}>
+            {projectTitle}
+          </Text>
           {projectTechnologies.map((tech, index) => (
             <Badge color={colors[index]} variant="light" key={index}>
               {tech}
@@ -55,7 +57,11 @@ function ProjectCard({
           ))}
         </Group>
 
-        <Text className="p-1 m-1" size="sm" style={{ color: secondaryColor, lineHeight: 1.5 }}>
+        <Text
+          className="p-1 m-2 font-roboto"
+          size="sm"
+          style={{ color: secondaryColor, lineHeight: 1.5 }}
+        >
           {projectDescription}
         </Text>
       </Card>

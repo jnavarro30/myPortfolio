@@ -12,7 +12,7 @@ function ContactDrawer() {
       <Drawer
         opened={opened}
         onClose={() => setOpened(false)}
-        title="Contact"
+        title="CONTACT"
         padding="xl"
         size="xs"
         position="top"
@@ -29,7 +29,7 @@ function ContactDrawer() {
             target="_blank"
           >
             <ActionIcon size={40}>
-              <BrandLinkedin onClick={() => console.log("gmail")} size={40} />
+              <BrandLinkedin style={{color: "#4682b4"}} onClick={() => console.log("gmail")} size={40} />
             </ActionIcon>
           </Anchor>
         </div>
@@ -37,7 +37,7 @@ function ContactDrawer() {
 
       <Group position="center">
         <ActionIcon size={40}>
-          <At onClick={() => setOpened(true)} size={40} />
+          <At style={{color: "#4169e1"}} onClick={() => setOpened(true)} size={40} />
         </ActionIcon>
       </Group>
     </>

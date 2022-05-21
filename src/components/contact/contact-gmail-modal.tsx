@@ -27,7 +27,7 @@ function GmailModal() {
 
       <Group position="center">
         <ActionIcon size={40}>
-          <BrandGmail onClick={() => setOpened(true)} size={40} />
+          <BrandGmail style={{color: "#e03c31"}} onClick={() => setOpened(true)} size={40} />
         </ActionIcon>
       </Group>
     </>

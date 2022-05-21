@@ -9,13 +9,16 @@ function ProjectList() {
     "Coming Soon"
   ]);
 
+  const colors = ["violet", "indigo", "", "cyan"]
+
   return (
     <List spacing="lg" size="lg">
       {projectTitles.map((title, index) => {
         return (
-          <List.Item key={index}>
+          <List.Item className="" key={index}>
             <a href={`#${index}`}>
               <Box
+                className="font-montserrat"
                 sx={(theme) => ({
                   backgroundColor:
                     theme.colorScheme === "dark"

@@ -6,7 +6,7 @@ import ProjectCard from "./project-card";
 function ProjectsPage() {
   return (
     <SimpleGrid
-      className=""
+      className="mb-8"
       spacing="lg"
       breakpoints={[
         { minWidth: "xs", cols: 2, spacing: "sm" },
