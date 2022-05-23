@@ -1,15 +1,12 @@
-import { useState } from "react";
 import { List, Box } from "@mantine/core";
 
 function ProjectList() {
-  const [projectTitles, setProjectTitles] = useState([
+  const projectTitles: string[] = [
     "Kingdom of Dwarves",
     "Pokemon Pokedex",
     "Coming Soon",
-    "Coming Soon"
-  ]);
-
-  const colors = ["violet", "indigo", "", "cyan"]
+    "Coming Soon",
+  ];
 
   return (
     <List spacing="lg" size="lg">
