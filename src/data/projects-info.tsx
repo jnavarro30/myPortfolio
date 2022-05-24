@@ -12,9 +12,9 @@ export const PROJECTS = [
     link: "https://app.kingdomofdwarves.io/",
   },
   {
-    title: "Pokemon Pokedex",
+    title: "The Pokemon Pokedex",
     description:
-      "Have you ever wanted to become a Pokemon trainer? Well, you are going to need your very own Pokedex to identify all those wild Pokemon! Simply use the controls already provided on the screen and bonus theme music included. ",
+      "Have you ever wanted to become a Pokemon trainer? Well, you are going to need your very own Pokedex to identify all those wild Pokemon! Simply use the controls already provided on the screen, switch to classic mode, and listen to bonus theme music. ",
     technologies: ["Javascript", "React", "Sass", "HTML"],
     image: Pokedex,
     link: "https://jn-pokedex.netlify.app/",
