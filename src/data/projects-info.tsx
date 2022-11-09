@@ -1,5 +1,6 @@
 import KoD from "../images/kingdom_of_dwarves.png";
 import Pokedex from "../images/pokemon_pokedex.png";
+import Hangman from "../images/hangman.png";
 import comingSoon from "../images/coming_soon.jpg";
 
 export const PROJECTS = [
@@ -20,12 +21,12 @@ export const PROJECTS = [
     link: "https://jn-pokedex.netlify.app/",
   },
   {
-    title: "Coming Soon",
+    title: "Hangman",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis perferendis nisi eum, facilis possimus adipisci, odit sint corporis quis eaque officia perspiciatis? Amet tenetur nemo quae repudiandae similique dicta dolor animi odit reiciendis culpa?",
-    technologies: ["Unkown", "Unkown", "Unkown", "Unkown"],
-    image: comingSoon,
-    link: "blank",
+      "The classic Hangman game where every limb represents one less change in figuring out the mystery word. These words are very challenging to solve so hints will eventually available at a price.",
+    technologies: ["Javascript", "Vue", "CSS", "HTML"],
+    image: Hangman,
+    link: "https://https://jn-hangman.netlify.app/",
   },
   {
     title: "Coming Soon",
