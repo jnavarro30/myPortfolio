@@ -26,7 +26,7 @@ export const PROJECTS = [
       "The classic Hangman game where every limb represents one less change in figuring out the mystery word. These words are very challenging to solve so hints will eventually available at a price.",
     technologies: ["Javascript", "Vue", "CSS", "HTML"],
     image: Hangman,
-    link: "https://https://jn-hangman.netlify.app/",
+    link: "https://jn-hangman.netlify.app/",
   },
   {
     title: "Coming Soon",
