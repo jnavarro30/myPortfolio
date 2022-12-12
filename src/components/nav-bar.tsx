@@ -5,19 +5,21 @@ import PortfolioDrawer from "./portfolio/portfolio-drawer";
 import ContactDrawer from "./contact/contact-drawer";
 
 interface AppProps {
-  setFlash: (a: boolean) => void;
+  setBounce: (a: boolean) => void;
+  darkTheme: boolean;
 }
 
-function Navbar( { setFlash }: AppProps) {
+function Navbar( { setBounce, darkTheme }: AppProps) {
   const homeOnClick = () => {
     window.scrollTo(0, 0);
-    setFlash(true);
+    setBounce(true);
     setTimeout(() => {
-      setFlash(false);
+      setBounce(false);
     }, 1000);
   }
   return (
-    <div className="nav_bar border-2 flex justify-evenly py-4 sticky top-0 z-10 bg-white">
+    <div className="nav_bar border-2 flex justify-evenly py-4 sticky top-0 z-10 bg-white"
+    style={{ background: darkTheme ? '#1A1B1E' : 'white' }}>
       <PortfolioDrawer />
       <ActionIcon size={40} onClick={homeOnClick}>
         <Home style={{color: "#228b22"}} size={40} />
