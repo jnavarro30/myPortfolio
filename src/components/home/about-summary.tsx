@@ -4,7 +4,7 @@ function AboutSummary() {
   return (
     <div className="flex flex-col items-center">
       <Title
-        className="animate__animated animate__bounce font-montserrat"
+        className="font-montserrat"
         order={1}
       >
         About Me

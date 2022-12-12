@@ -4,11 +4,22 @@ import { Home } from "tabler-icons-react";
 import PortfolioDrawer from "./portfolio/portfolio-drawer";
 import ContactDrawer from "./contact/contact-drawer";
 
-function Navbar() {
+interface AppProps {
+  setFlash: (a: boolean) => void;
+}
+
+function Navbar( { setFlash }: AppProps) {
+  const homeOnClick = () => {
+    window.scrollTo(0, 0);
+    setFlash(true);
+    setTimeout(() => {
+      setFlash(false);
+    }, 1000);
+  }
   return (
     <div className="nav_bar border-2 flex justify-evenly py-4 sticky top-0 z-10 bg-white">
       <PortfolioDrawer />
-      <ActionIcon size={40} onClick={() => window.scrollTo(0, 0)}>
+      <ActionIcon size={40} onClick={homeOnClick}>
         <Home style={{color: "#228b22"}} size={40} />
       </ActionIcon>
       <ContactDrawer />

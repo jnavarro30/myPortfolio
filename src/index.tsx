@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { hotjar } from 'react-hotjar';
 
-hotjar.initialize('3216512', 6);
+hotjar.initialize(3216512, 6);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

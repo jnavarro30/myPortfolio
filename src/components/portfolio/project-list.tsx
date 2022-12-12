@@ -4,7 +4,7 @@ function ProjectList() {
   const projectTitles: string[] = [
     "Kingdom of Dwarves",
     "Pokemon Pokedex",
-    "Coming Soon",
+    "Hangman",
     "Coming Soon",
   ];
 
