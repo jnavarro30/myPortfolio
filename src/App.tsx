@@ -10,10 +10,17 @@ import ProjectsPage from "./components/portfolio/projects-page";
 import { MantineProvider } from '@mantine/core';
 import { ActionIcon } from "@mantine/core";
 import { Bulb, BulbOff } from "tabler-icons-react";
+import { hotjar } from 'react-hotjar';
 
 function App() {
   const [bounce, setBounce] = useState<boolean>(false);
   const [darkTheme, setDarkTheme] = useState<boolean>(false);
+  const handleClick = () => {
+    console.log('hi');
+    hotjar.event('button-click');
+  }
+
+  hotjar.identify('USER_ID', { userProperty: 'value' });
 
   return (
     <MantineProvider theme={{ colorScheme: darkTheme ? 'dark' : 'light' }} withGlobalStyles withNormalizeCSS>
@@ -27,6 +34,7 @@ function App() {
       </ActionIcon>
         <AspectRatio ratio={720 / 1080} sx={{ maxWidth: 300 }} mx="auto">
           <Image
+            onClick={handleClick}
             className={ bounce ? "animate__animated animate__bounce" : "" }
             src={myPic}
             alt="picture of myself"
