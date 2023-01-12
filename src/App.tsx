@@ -7,6 +7,7 @@ import myPic from "./images/profile-pic.png";
 import Navbar from "./components/nav-bar";
 import AboutSummary from "./components/home/about-summary";
 import ProjectsPage from "./components/portfolio/projects-page";
+import GameDraft from './components/game-draft';
 import { MantineProvider } from '@mantine/core';
 import { ActionIcon } from "@mantine/core";
 import { Bulb, BulbOff } from "tabler-icons-react";
@@ -45,6 +46,7 @@ function App() {
         </AspectRatio>
         <AboutSummary />
         <ProjectsPage />
+        <GameDraft />
       </Container>
     </MantineProvider>
   );
