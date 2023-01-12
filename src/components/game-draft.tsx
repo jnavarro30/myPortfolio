@@ -2,13 +2,13 @@
 
 function GameDraft() {
   return (
-    <div>
+    <div className="m-5">
         <h1 className="text-center">TESTING</h1>
-        <iframe 
+        {/* <iframe 
         className="m-auto text-center"
-        src="https://avoid-capture.netlify.app/" height="600px" width="600"
+        src="https://avoid-capture.netlify.app/" height="600px" width="600px"
     >
-    </iframe>
+    </iframe> */}
     </div>
   );
 }
